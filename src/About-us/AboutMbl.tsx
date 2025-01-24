@@ -6,7 +6,13 @@ import about from "../../public/images/About1.png"
 import about1 from "../../public/images/About2.png"
 
 import about2 from "../../public/images/About3.png"
+import { Satisfy } from 'next/font/google'
 
+const satisfy = Satisfy({
+  subsets: ['latin'],
+  variable: '--satisfy',
+  weight: '400',
+});
 const AboutMbl = () => {
   return (
     <>
@@ -14,7 +20,7 @@ const AboutMbl = () => {
     <section className='block md:hidden p-2 justify-between relative   py-12 bg-black'>
 
 <div className=' block  p-2 relative  '>
-    <h2 className='text-orange-400 text-2xl ml-2'>
+    <h2 className='text-orange-400 font-satisfy text-2xl ml-2'>
       
         about-us
     </h2>

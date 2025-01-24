@@ -6,6 +6,15 @@ import choose3 from "../../public/images/image12.png";
 import choose4 from "../../public/images/image13.png";
 import choose5 from "../../public/images/image14.png";
 import choose6 from "../../public/images/unsplash_dphM2U1xq0U (4).png";
+import { Satisfy } from "next/font/google";
+
+
+
+const satisfy = Satisfy({
+  subsets: ['latin'],
+  variable: '--satisfy',
+  weight: '400',
+});
 
 function ChooseUS() {
   return (
@@ -14,7 +23,7 @@ function ChooseUS() {
      
        {/* Right Section: Text */}
        <div className="flex-1 mt-8 lg:mt-0 lg:pl-8">
-        <h2 className="text-orange-400 text-xl md:text-2xl text-center lg:text-left">
+        <h2 className="text-orange-400 font-satisfy text-xl md:text-2xl text-center lg:text-left">
           Why Choose Us
         </h2>
         <h2 className="text-3xl md:text-6xl font-bold pt-4 text-center lg:text-left">

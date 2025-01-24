@@ -4,7 +4,13 @@ import choose1 from "../../public/images/category1.jpeg"
 import choose2 from "../../public/images/category2.png"
 import choose3 from "../../public/images/category3.jpeg"
 import choose4 from "../../public/images/category4.jpeg"
+import { Satisfy } from 'next/font/google';
 
+const satisfy = Satisfy({
+  subsets: ['latin'],
+  variable: '--satisfy',
+  weight: '400',
+});
 const categoryMbl = () => {
   return (
     <>
@@ -12,7 +18,7 @@ const categoryMbl = () => {
     <section className="bg-black block md:hidden  justify-center text-white">
         <div className="flex flex-wrap justify-center   ">
         <div className=" justify-center items-center  px-8">
-            <h2 className="text-orange-400  text-4xl">Food Category</h2>
+            <h2 className="text-orange-400 font-satisfy   text-4xl">Food Category</h2>
             <h2 className="text-white font-bold  text-2xl font-bold px-2">
                 <span className="text-orange-400 ">Choose</span> Food Items
             </h2>

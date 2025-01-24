@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoSearchOutline } from "react-icons/io5";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { Menu } from 'lucide-react';
+
 
 import Link from 'next/link';
 import NavbarMbl from './NavbarMbl';

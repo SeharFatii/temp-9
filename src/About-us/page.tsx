@@ -7,6 +7,16 @@ import about1 from "../../public/images/About2.png"
 import about2 from "../../public/images/About3.png"
 import { FaCheck } from 'react-icons/fa'
 import AboutMbl from './AboutMbl'
+import { Satisfy } from 'next/font/google'
+
+
+
+const satisfy = Satisfy({
+  subsets: ['latin'],
+  variable: '--satisfy',
+  weight: '400',
+});
+
 const About = () => {
   return (
     <>
@@ -14,7 +24,7 @@ const About = () => {
     <section className='hidden md:flex p-16 justify-between relative   py-12 bg-black'>
 
 <div className=' flex flex-col p-2 py-2 relative w-1/2 absolute  '>
-    <h2 className='text-orange-400'>
+    <h2 className='text-orange-400 font-satisfy text-3xl'>
         about-us
     </h2>
     <h2 className='text-white mb-[120px] text-6xl  font-bold text-6xxl  '>

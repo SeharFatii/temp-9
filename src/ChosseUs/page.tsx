@@ -7,6 +7,19 @@ import choose4 from "../../public/images/image13.png";
 import choose5 from "../../public/images/image14.png";
 import choose6 from "../../public/images/unsplash_dphM2U1xq0U (4).png";
 import MBLchose from "./MBLchose";
+import bg from "../../public/images/Background.png"
+import { Satisfy } from "next/font/google";
+
+
+
+
+
+
+const satisfy = Satisfy({
+  subsets: ['latin'],
+  variable: '--satisfy',
+  weight: '400',
+});
 
 function ChooseUS() {
   return (
@@ -77,7 +90,7 @@ function ChooseUS() {
 
       {/* Right Section: Text */}
       <div className="flex-1 pl-8">
-        <h2 className="text-orange-400 text-xl md:text-2xl">Why Choose Us</h2>
+        <h2 className="text-orange-400 font-satisfy pt-4 text-xl md:text-2xl">Why Choose Us</h2>
         <h2 className="text-3xl md:text-6xl font-bold pt-4">
           <span className="text-orange-400">Ex</span>traordinary Taste<br />
           and Experienced
@@ -92,6 +105,11 @@ function ChooseUS() {
           pariatur? Praesentium tempore ex incidunt itaque. Sint!
         </p>
       </div>
+    </section>
+
+
+    <section>
+      <Image src={bg} alt=""/>
     </section>
 <MBLchose/>
     </>

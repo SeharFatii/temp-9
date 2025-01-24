@@ -15,7 +15,7 @@ import {
   } from "@/components/ui/sheet"
 
 import Link from 'next/link'
-import { IoSearchOutline } from 'react-icons/io5';
+
 import { MdOutlineShoppingCart } from 'react-icons/md';
   
 const NavbarMbl = () => {
