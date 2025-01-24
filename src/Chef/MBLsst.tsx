@@ -17,12 +17,12 @@ const urlFor = (source: any) => builder.image(source).url();
 
 // Fetch posts from Sanity
 const fetchPosts = async (): Promise<Chef[]> => {
-  const query = `*[_type == "chef"][1..4] { image, name,position }`;
+  const query = `*[_type == "chef"][1..2] { image, name,position }`;
   const fetchedPosts = await client.fetch(query);
   return fetchedPosts;
 };
 
-const SSt = () => {
+const MBLsst = () => {
   const [chefs, setChefs] = useState<Chef[]>([]);
 
   useEffect(() => {
@@ -34,18 +34,18 @@ const SSt = () => {
   }, []);
 
   return (
-    <div className='flex justify-center items-center pb-8 gap-4 px-8 flex-wrap pt-8'>
+    <div className='grid justify-center items-center pb-8  px-8  pt-0 flex-wrap '>
       {chefs.map((chef, index) => (
         <div
           key={index}
           style={{
             backgroundColor: '#696969	',
             borderRadius: '8px',
-            width: '310px',
-            height: '400px',
-            padding: '20px',
-            paddingBottom: '40px',
-            
+            width: '260px',
+            height: '350px',
+            padding: '40px',
+            paddingBottom: '30px',
+            marginTop:'10px',
             textAlign: 'center',
             
           }}
@@ -56,12 +56,12 @@ const SSt = () => {
               src={urlFor(chef.image)}
               alt={chef.name}
               width={360}
-              height={300}
-              className='  flex  px-12 pb-8 rounded-[25px]'
+              height={150}
+              className='  flex  px-12 pb-8 pt-8 mt-8 rounded-[25px]'
             />
           )}
-          <h3 className='font-bold bg-white text-2xl '>{chef.name}</h3>
-          <h3 className='font-bold bg-white pb-8 text-xl'>{chef.position}</h3>
+          <h3 className='font-bold bg-white text-xl '>{chef.name}</h3>
+          <h3 className='font-bold bg-white pb-8 text-base'>{chef.position}</h3>
         </div>
         
       ))}
@@ -71,5 +71,4 @@ const SSt = () => {
   );
 };
 
-export default SSt;
-
+export default MBLsst;

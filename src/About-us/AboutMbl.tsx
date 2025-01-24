@@ -14,20 +14,20 @@ const AboutMbl = () => {
     <section className='block md:hidden p-2 justify-between relative   py-12 bg-black'>
 
 <div className=' block  p-2 relative  '>
-    <h2 className='text-orange-400 text-2xl'>
+    <h2 className='text-orange-400 text-2xl ml-2'>
       
         about-us
     </h2>
-    <h2 className='text-white mb-[120px] text-4xl  font-bold text-6xxl  '>
+    <h2 className='text-white mb-[120px] text-4xl  font-bold ml-2  '>
         <span className='text-orange-400'>We</span> Create The Best Food Product
     </h2>
-    <p className='mt-[120px]  text-xl w-[100px] text-white'>
+    <p className='mt-[120px]  text-xl w-[100px] text-white ml-2'>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo itaque voluptas fugiat. Incidunt ratione alias perspiciatis esse. Asperiores accusamus animi libero nostrum iure. Reprehenderit iure, ad nemo optio corrupti ea?
     </p>
 {/* point */}
-<ul className="ml-[10%] text-white text-center md:text-left md:ml-[0] mt-6 space-y-4">
-          <li className="flex items-center text-[14px] md:text-[16px]">
-            <FaCheck className="text-center text-[#FF9F0D] mr-3" />
+<ul className="ml-[10%] text-white text-center  mt-6 space-y-2">
+          <li className="flex items-center text-base  pt-4 ml-2">
+            <FaCheck className="text-center text-orange-400 mr-3 " />
             Lacus nisi, et ac dapibus sit eu velit in consequat.
           </li>
           <li className="flex items-center text-[14px] md:text-[16px]">
@@ -40,7 +40,7 @@ const AboutMbl = () => {
           </li>
         </ul>
 
-        <button className="bg-orange-400 text-white w-1/4 px-2 py-3 mt-[120px] rounded-[25px]">
+        <button className="bg-orange-400 text-white w-1/4 px-4 py-3 mt-[120px] rounded-[20px] ml-4">
           See More
         </button>
         
@@ -52,9 +52,9 @@ const AboutMbl = () => {
 <div className='flex-col px-2 py-2 mt-[120px] '>
 <Image src={about} alt="" width={360} height={120}  className='rounded-[25px]  px-2'/>
 <div className='flex py-4 space-between '>
-<Image src={about1} alt=""  width={180} height={120} className='rounded-[15px]  px-2'/>
+<Image src={about1} alt=""  width={150} height={120} className='rounded-[15px]  px-2'/>
 
-<Image src={about2} alt="" width={180} height={120} className='rounded-[15px]  px-2'/>
+<Image src={about2} alt="" width={150} height={120} className='rounded-[15px]  px-2'/>
 </div>
 </div>
 
