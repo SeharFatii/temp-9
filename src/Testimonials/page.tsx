@@ -14,7 +14,7 @@ import Image from 'next/image'
   <LiaStarSolid key={5} className="text-yellow-400" />,
   <LiaStarSolid key={6} style={{ color: 'black' }} />,
 ]
- const commenticon=<LiaCommentDots className="text-orange-400"/>
+ const commenticon=<LiaCommentDots  key={1} className="text-orange-400"/>
 
 const Testimonials = () => {
   return (

@@ -6,8 +6,8 @@ import { IoIosArrowForward } from "react-icons/io";
 
 
 
-const icons=[<CiSearch className='hover:text-orange-400'/>,
-<VscAccount className='hover:text-orange-400'/>,<HiOutlineShoppingBag className='hover:text-orange-400'/>]
+const icons=[<CiSearch key={1} className='hover:text-orange-400'/>,
+<VscAccount key={2} className='hover:text-orange-400'/>,<HiOutlineShoppingBag key={3} className='hover:text-orange-400'/>]
 
 import { RiMenu3Fill } from "react-icons/ri";
 

@@ -7,15 +7,6 @@ import about1 from "../../public/images/About2.png"
 import about2 from "../../public/images/About3.png"
 import { FaCheck } from 'react-icons/fa'
 import AboutMbl from './AboutMbl'
-import { Satisfy } from 'next/font/google'
-
-
-
-const satisfy = Satisfy({
-  subsets: ['latin'],
-  variable: '--satisfy',
-  weight: '400',
-});
 
 const About = () => {
   return (

@@ -8,11 +8,9 @@ import { CiSearch } from "react-icons/ci";
 import { VscAccount } from "react-icons/vsc";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import MenuMBLnav from '@/app/Menu/MenuMBLnav';
-import { UserButton } from '@clerk/nextjs';
-import { SignedIn } from '@clerk/clerk-react';
 
-const icons=[<CiSearch className='hover:text-orange-400'/>,
-<VscAccount className='hover:text-orange-400'/>,<HiOutlineShoppingBag className='hover:text-orange-400'/>]
+const icons=[<CiSearch key={1} className='hover:text-orange-400'/>,
+<VscAccount key={2} className='hover:text-orange-400'/>,<HiOutlineShoppingBag key={3 }className='hover:text-orange-400'/>]
 const MenuHero = () => {
   return (
     <>

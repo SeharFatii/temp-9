@@ -32,7 +32,7 @@ const AlProductss = () => {
   {/* Products Section */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
     {products.map((product) => (
-      <div key={product.id} className="rounded-[25px]">
+      <div key={product._id} className="rounded-[25px]">
        
        
        <Link href={`/product/${product.slug.current}`}>

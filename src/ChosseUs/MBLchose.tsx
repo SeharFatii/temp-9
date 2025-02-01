@@ -5,16 +5,11 @@ import choose2 from "../../public/images/image11.png";
 import choose3 from "../../public/images/image12.png";
 import choose4 from "../../public/images/image13.png";
 import choose5 from "../../public/images/image14.png";
-import choose6 from "../../public/images/unsplash_dphM2U1xq0U (4).png";
-import { Satisfy } from "next/font/google";
+import choose6 from "../../public/images/unsplash_dphM2U1xq0U (4).png"
 
 
 
-const satisfy = Satisfy({
-  subsets: ['latin'],
-  variable: '--satisfy',
-  weight: '400',
-});
+
 
 function ChooseUS() {
   return (
