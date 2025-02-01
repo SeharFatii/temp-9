@@ -1,60 +1,76 @@
 export default {
-    name: 'food',
-    type: 'document',
-    title: 'Food',
-    fields: [
-      {
-        name: 'name',
-        type: 'string',
-        title: 'Food Name',
+  name: 'food',
+  type: 'document',
+  title: 'Food',
+  fields: [
+    {
+      name: 'id',
+      type: 'string',
+      title: 'Food ID',
+      description: 'Unique identifier for the food item',
+     
+    },
+    {
+      name: 'name',
+      type: 'string',
+      title: 'Food Name',
+    },
+    {
+      name: 'category',
+      type: 'string',
+      title: 'Category',
+      description: 'Category of the food item (e.g., Burger, Sandwich, Drink, etc.)',
+    },
+    {
+      name: 'slug',
+      type: 'slug',
+      title: 'Slug',
+      options: {
+        source: 'name',
+        maxLength: 200, // Limit the slug length
       },
-      {
-        name: 'category',
-        type: 'string',
-        title: 'Category',
-        description:
-          'Category of the food item (e.g., Burger, Sandwich, Drink, etc.)',
+    },
+    {
+      name: 'price',
+      type: 'number',
+      title: 'Current Price',
+    },
+    {
+      name: 'originalPrice',
+      type: 'number',
+      title: 'Original Price',
+      description: 'Price before discount (if any)',
+    },
+    {
+      name: 'tags',
+      type: 'array',
+      title: 'Tags',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'tags',
       },
-      {
-        name: 'price',
-        type: 'number',
-        title: 'Current Price',
+      description: 'Tags for categorization (e.g., Best Seller, Popular, New)',
+    },
+    {
+      name: 'image',
+      type: 'image',
+      title: 'Food Image',
+      options: {
+        hotspot: true,
       },
-      {
-        name: 'originalPrice',
-        type: 'number',
-        title: 'Original Price',
-        description: 'Price before discount (if any)',
-      },
-      {
-        name: 'tags',
-        type: 'array',
-        title: 'Tags',
-        of: [{ type: 'string' }],
-        options: {
-          layout: 'tags',
-        },
-        description: 'Tags for categorization (e.g., Best Seller, Popular, New)',
-      },
-      {
-        name: 'image',
-        type: 'image',
-        title: 'Food Image',
-        options: {
-          hotspot: true,
-        },
-      },
-      {
-        name: 'description',
-        type: 'text',
-        title: 'Description',
-        description: 'Short description of the food item',
-      },
-      {
-        name: 'available',
-        type: 'boolean',
-        title: 'Available',
-        description: 'Availability status of the food item',
-      },
-    ],
-  };
+    },
+    {
+      name: 'description',
+      type: 'text',
+      title: 'Description',
+      description: 'Short description of the food item',
+    },
+    {
+      name: 'available',
+      type: 'boolean',
+      title: 'Available',
+      description: 'Availability status of the food item',
+    },
+  ],
+};
+

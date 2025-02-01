@@ -1,6 +1,13 @@
-
 import React from 'react'
+import Image from 'next/image'
+import Navh from "../../../public/images/HeroNav.png"
+import { IoIosArrowForward } from "react-icons/io";
 
+
+
+
+const icons=[<CiSearch className='hover:text-orange-400'/>,
+<VscAccount className='hover:text-orange-400'/>,<HiOutlineShoppingBag className='hover:text-orange-400'/>]
 
 import { RiMenu3Fill } from "react-icons/ri";
 
@@ -17,12 +24,15 @@ import {
 import Link from 'next/link'
 
 import { MdOutlineShoppingCart } from 'react-icons/md';
-  
-const NavbarMbl = () => {
+import { CiSearch } from 'react-icons/ci';
+import { VscAccount } from 'react-icons/vsc';
+import { HiOutlineShoppingBag } from 'react-icons/hi2';
+const MenuMBLnav = () => {
   return (
     <>
+    <section className='bg-black pt-2 pb-2'>
     <Sheet >
-  <SheetTrigger className='flex md:hidden bg-pink-400 hover:text-yellow-400 text-white'><RiMenu3Fill/></SheetTrigger>
+  <SheetTrigger className='flex md:hidden bg-pink-400 hover:text-yellow-400 text-white ml-8 mt-2'><RiMenu3Fill/></SheetTrigger>
   <SheetContent className='bg-gray-700'>
     <SheetHeader >
       <SheetTitle className=' font-bold text-yellow-400'>Menu</SheetTitle>
@@ -46,13 +56,13 @@ const NavbarMbl = () => {
   href="/Blogs"
   className="pb-2 text-white hover:cursor-pointer hover:bg-yellow-400  text-white px-8 hover:shadow-md decoration-[#FF9F0D] transform transition-transform duration-300 ease-in-out hover:translate-y-[-3px]"
 >
-  Blog
+  Pages
 </Link>
 <Link
-  href="/Chef"
+  href="/OurChef"
   className=" pb-2 text-white hover:cursor-pointer hover:bg-yellow-400 text-white px-8 hover:shadow-md decoration-[#FF9F0D] transform transition-transform duration-300 ease-in-out hover:translate-y-[-3px]"
 >
-  Our Chef
+  Blogs
 </Link>
 <Link
   href="/BlogDetails"
@@ -61,7 +71,7 @@ const NavbarMbl = () => {
   About
 </Link>
 <Link
-  href="/Shop"
+  href="/OurShop"
   className=" text-white pb-2 hover:cursor-pointer hover:bg-yellow-400 text-white px-8 hover:shadow-md decoration-[#FF9F0D] transform transition-transform duration-300 ease-in-out hover:translate-y-[-3px]"
 >
   Shop
@@ -81,26 +91,61 @@ const NavbarMbl = () => {
     </SheetHeader>
   </SheetContent>
   
-<div className='flex md:hidden text-white items-center  mt-0 '>
+  <div className='flex md:hidden items-center gap-2 text-white text-xl ' style={{marginLeft:'280px', marginTop:'-20px'}}> 
+  {icons }
 
-{/*             
-<input type="text" placeholder='Search...' className=' flex  left-[120px] absolute  h-[30px]  mr-[0px] border-[1px] border-[#FF9F0D] rounded-[20px] bg-black text-[white] placeholder:pl-2  focus:outline-none'></input> */}
-{/* 
-<IoSearchOutline className=' flex   relative left-[280px]  absolute text-white' /> */}
-<div className='flex  text-white'>
-  <MdOutlineShoppingCart className='w-6 h-6 text-white left-[190px] top-[72px] absolute' />
-</div>
-</div>
+
+    </div>
     
 </Sheet>
+</section>
+    
 
-    
-    
-    
-    
-    
+
+
+    {/* heroIMAGE */}
+
+
+    <section className="relative flex md:hidden flex-1 items-center justify-center rounded-lg bg-gray-100 py-12 shadow-lg sm:py-16 md:py-20 xl:py-48">
+  {/* Image - Start */}
+  <Image
+    src={Navh}
+    loading="lazy"
+    alt="Photo by Fakurian Design"
+    className="absolute inset-0 w-full h-full object-cover object-center"
+  />
+  {/* Image - End */}
+
+  {/* Overlay - Start */}
+  <div className="absolute inset-0 bg-black opacity-40" />
+  {/* Overlay - End */}
+
+  {/* Text - Start */}
+  <div className="relative flex flex-col items-center px-4 sm:max-w-xl">
+    <h1 className="mb-6 text-center text-3xl font-bold text-white sm:text-4xl md:mb-8 md:text-5xl xl:text-6xl">
+      Our Menu
+    </h1>
+
+    <div className="flex flex-wrap items-center text-white text-lg sm:text-xl sm:flex-row sm:gap-2">
+      <h2>Home</h2>
+      <IoIosArrowForward className=" sm:block" />
+      <h2 className="text-yellow-400 hover:underline">Menu</h2>
+    </div>
+  </div>
+  {/* Text - End */}
+</section>
+
+
+
+
+
+
+
+
+
+
     </>
   )
 }
 
-export default NavbarMbl
+export default MenuMBLnav

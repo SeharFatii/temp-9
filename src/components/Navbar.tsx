@@ -15,7 +15,7 @@ function Navbar() {
       <header className="  mx-auto body-font ">
         <div className="flex  items-center justify-between h-20 mx-5">
         <NavbarMbl/>
-          <nav className=" hidden lg:flex gap-[40px] ml-6 hidden md:flex w-full">
+          <nav className=" hidden lg:flex gap-[40px] ml-6 hidden md:flex w-full text-2xl">
 
             <Link
               href="/"
@@ -48,7 +48,7 @@ function Navbar() {
               About
             </Link>
             <Link
-              href="/OurShop"
+              href="/Shop"
               className="mr-5 text-white hover:cursor-pointer hover:underline decoration-[#FF9F0D] transform transition-transform duration-300 ease-in-out hover:translate-y-[-3px]"
             >
               Shop

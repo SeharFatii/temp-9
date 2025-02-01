@@ -34,35 +34,33 @@ const MBLsst = () => {
   }, []);
 
   return (
-    <div className='grid justify-center items-center pb-8  px-8  pt-0 flex-wrap '>
+    <div className='grid justify-center items-center pb-8  px-8  pt-8 pb-4 flex-wrap '>
       {chefs.map((chef, index) => (
         <div
-          key={index}
-          style={{
-            backgroundColor: '#696969	',
-            borderRadius: '8px',
-            width: '260px',
-            height: '350px',
-            padding: '40px',
-            paddingBottom: '30px',
-            marginTop:'10px',
-            textAlign: 'center',
-            
-          }}
-          
-        >
-          {chef.image && (
-            <Image
-              src={urlFor(chef.image)}
-              alt={chef.name}
-              width={360}
-              height={150}
-              className='  flex  px-12 pb-8 pt-8 mt-8 rounded-[25px]'
-            />
-          )}
-          <h3 className='font-bold bg-white text-xl '>{chef.name}</h3>
-          <h3 className='font-bold bg-white pb-8 text-base'>{chef.position}</h3>
-        </div>
+              key={index}
+              className="bg-gray-600 rounded-lg w-[310px] h-[400px] p-5 text-center relative"
+            >
+              {/* Chef Image */}
+              {chef.image && (
+                <Image
+                  src={urlFor(chef.image)}
+                  alt={chef.name}
+                  width={360}
+                  height={300}
+                  className="rounded-[25px] mx-auto pb-6"
+                />
+              )}
+        
+              {/* Yellow Divider and Text */}
+              <div className="h-[9px] w-[290px] bg-yellow-400 rounded-lg mx-auto -mt-8">
+                <h3 className="font-bold bg-white text-xl text-gray-800 -mt-6 px-2">
+                  {chef.name}
+                </h3>
+                <h3 className="font-bold bg-white text-lg text-gray-800 px-2">
+                  {chef.position}
+                </h3>
+              </div>
+            </div>
         
       ))}
         </div>

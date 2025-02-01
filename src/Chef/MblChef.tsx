@@ -22,8 +22,10 @@ const MblChef = () => {
 
 </div>
 <MBLsst/>
-<div className='flex justify-center border-[10px] hover:underline hover:text-white  items-center pt-8'>
-<button className='bg-transparent pt-2 py-4 pb-8 border-solid border-orange-400 flex  justify-center border-[10px] items-center px-8 rounded-[25px] w-[290px] text-orange-400 font-bold text-2xl'>see more</button>
+<div className='flex justify-center pt-8  hover:underline hover:text-white  items-center pt-8' style={{marginTop:'8px'}}>
+<button className='bg-transparent pt-8 py-4 pb-8 border-solid border-orange-400 flex  justify-center border-[5px] items-center px-8 rounded-[25px] w-[290px] text-orange-400 font-bold text-2xl' 
+style={{borderColor:'orange',borderWidth:'5px',borderStyle:'solid',paddingTop:'8px',paddingBottom:'8px',paddingLeft:'8px',paddingRight:'8px',borderRadius:'25px',width:'290px',fontSize:'20px',fontWeight:'bold',color:'orange'}}>
+see more</button>
 </div>
 
 

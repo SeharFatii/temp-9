@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Navh from "../../public/images/HeroNav.png"
+import Navh from "../../../public/images/HeroNav.png"
 import { IoIosArrowForward } from "react-icons/io";
 
 
@@ -8,12 +8,11 @@ import { CiSearch } from "react-icons/ci";
 import { VscAccount } from "react-icons/vsc";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import MenuMBLnav from '@/app/Menu/MenuMBLnav';
-import { UserButton } from '@clerk/nextjs';
-import { SignedIn } from '@clerk/clerk-react';
 
-const icons=[<CiSearch className='hover:text-orange-400'/>,
-<VscAccount className='hover:text-orange-400'/>,<HiOutlineShoppingBag className='hover:text-orange-400'/>]
-const MenuHero = () => {
+const icons=[<CiSearch key={1} className='hover:text-orange-400'/>,
+<VscAccount key={2} className='hover:text-orange-400'/>,
+<HiOutlineShoppingBag key={3} className='hover:text-orange-400'/>]
+const NavProducts = () => {
   return (
     <>
     
@@ -67,12 +66,12 @@ const MenuHero = () => {
       <div className="relative flex flex-col items-center p-4 sm:max-w-xl">
         
         <h1 className="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">
-          Our Menu
+          Our Shop
         </h1>
         <div className="flex w-full text-white text-2xl flex-col gap-2.5 sm:flex-row sm:justify-center">
          <h2>Home </h2>
          <h2><IoIosArrowForward/></h2>
-          <h2 className='text-yellow-400 hover:underline'>Menu</h2>
+          <h2 className='text-yellow-400 hover:underline'>Shop</h2>
         </div>
       </div>
       {/* text end */}
@@ -85,4 +84,4 @@ const MenuHero = () => {
   )
 }
 
-export default MenuHero
+export default NavProducts

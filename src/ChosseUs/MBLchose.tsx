@@ -67,7 +67,7 @@ function ChooseUS() {
           </div>
 
           {/* Second Row of Images */}
-          <div className="flex flex-wrap md:flex-row gap-4 px-8">
+          <div className="flex flex-wrap md:flex-row  px-8">
             <Image
               src={choose2}
               width={105}
@@ -85,7 +85,7 @@ function ChooseUS() {
           </div>
 
           {/* Third Row of Images */}
-          <div className="flex flex-col gap-4 items-center pt-4">
+          <div className="flex flex-col  items-center pt-4">
             <Image
               src={choose4}
               width={195}

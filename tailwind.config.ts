@@ -6,6 +6,10 @@ export default {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+
+	'./pages/**/*.{js,ts,jsx,tsx}', // Include your pages folder
+    './components/**/*.{js,ts,jsx,tsx}', // Include your components folder
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     extend: {
@@ -63,7 +67,9 @@ export default {
   },
   plugins: [require("tailwindcss-animate"),
 
-        require('flowbite/plugin')
+        require('flowbite/plugin') ,// Add Flowbite as a plugin
+		require('daisyui'), // Add DaisyUI as a plugin
+
     ]
   ,
 } satisfies Config;

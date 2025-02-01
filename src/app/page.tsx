@@ -6,7 +6,11 @@ import MenuHero from '@/components/MenuHero'
 import Navbar from '@/components/Navbar'
 import Chef from '@/Chef/page'
 import React from 'react'
-import Comment from '@/Comments/page'
+import Testimonials from '@/Testimonials/page'
+import AlProductss from './Shop/Alproducts'
+import SomeFood from './Shop/SomeFood'
+
+
 
 const page = () => {
   return (<>
@@ -17,6 +21,10 @@ const page = () => {
   <Category/>
   <ChooseUS/>
   <Chef/>
+  <Testimonials/>
+  <SomeFood/>
+
+<AlProductss/>
   
   
   </>

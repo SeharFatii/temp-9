@@ -1,14 +1,9 @@
 import React from 'react'
-import { Satisfy } from 'next/font/google';
+
 import Image from 'next/image';
 import hero from "../../public/images/Hero.png"
 
 
-const satisfy = Satisfy({
-  subsets: ['latin'],
-  variable: '--satisfy',
-  weight: '400',
-});
 
 const HeroMbl = () => {
   return (
